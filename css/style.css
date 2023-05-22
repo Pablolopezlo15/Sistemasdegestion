@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik';
+}
+body{
+  background-color: #EEEEEE;
+  background-image: url(../img/fondo/preview.jpg) ;
+}
+#actual{
+  border-bottom: #00ADB5 3px solid;
+  border-radius: 5px;
+}
+nav{
+  width: 100%;
+  background-color: #393E46;
+  margin-top: -10%;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  padding: 1.5%;
+}
+nav img{
+  width: 40px; 
+}
+#loginimg{
+  width: 20px; 
+}
+#carrito{
+  width: 30px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul div{
+  display: inline-flex;
+  justify-content: space-between;
+  
+}
+
+nav ul li {
+  position: relative;
+}
+  
+nav ul li a {
+  color: white;
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav ul ul {
+  background: #393E46;
+  border-radius: 0 0 5px 5px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+  
+nav ul ul ul {
+  border-radius: 0 0 5px 5px;
+  left: 100%;
+  top: 0;
+}
+  
+nav ul ul li {
+  display: block;
+  position: relative;
+  width: 200px;
+}
+  
+nav ul ul li a {
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+  
+nav ul li:hover > ul {
+  display: block;
+}
+nav ul li a:hover{
+  color: #00ADB5;
+   font-size: x-large;
+  transition: 0.3s;
+}
+  
+nav ul ul li:hover > ul {
+  display: block;
+}
+  
+nav ul ul li:hover {
+  background: #393E46;
+}
+
+/*Menu Hamburguesa */
+
+#menu, #menu-check{
+  display: none;
+}
+
+@media only screen and (max-width: 700px){  
+
+    header div.contenedor nav{
+    display: flex;
+    flex-direction: column;        
+  }
+    
+  #menu-check:not(:checked) ~ nav{
+    display: none;
+  }
+
+  #menu-check:checked ~  nav  {
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  #menu-check:checked ~  nav ul {
+    text-align: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+  }
+    
+  #menu-check:checked ~  nav ul ul{
+    position: relative;
+    top: 0;
+    left: 29%;
+    height: 100%;
+  }
+
+  #menu-check:checked ~  nav ul ul ul{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+    
+  #menu-check:checked ~  nav ul div{
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  #menu-check:checked ~ nav ul div li ul{
+    position: relative;
+  }
+  #menu-check:checked ~ nav ul div li ul li{
+    position: relative;
+    top: 0;
+  }
+  #menu{
+    display: block;
+    background-color: whitesmoke;
+    font-size: 1.2em;
+    border: 3px solid rgb(49, 133, 212);
+    border-radius: 0.3em;
+    right: 0.5em;
+    padding: 15px;
+    top: 0.5em;
+    z-index: 9999;
+    position: fixed;
+  }
+  #menu:hover{
+    color: white;
+    background-color: rgb(49, 133, 212);
+  }
+  #menu-cerrar{
+    display: none;
+  }
+  #menu-check:checked ~ label #menu-abrir{
+    display: none;
+  }
+  #menu-check:checked ~ label #menu-cerrar{
+    display: block;
+  }
+
+}
+
+/* MAIN */
+main section{
+  margin-top: 10%;
+}
+
+main section img{
+  width: 100%;
+  margin-top: -5%;
+}
+
+main section article{
+  margin-top: 5%;
+}
+main section article h1{
+  font-size: xx-large;
+  text-align: center;
+
+}
+main section article p,h2,h4{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+main section article ol li{
+  margin-right: 5%;
+}
+main section article p{
+  margin-bottom: 2%;
+}
+main section article h4{
+  margin-top: 0.5%;
+}
+
+main section article ol{
+  margin-left: 10%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+main section article ol li span{
+  font-weight: bolder;
+  color: #00ADB5;
+  font-size: large;
+}
+main section article ol li a{
+  color: #00ADB5;
+}
+main section article ol li a:visited{
+  color: #00ADB5;
+}
+main section article img{
+  width: 40%;
+  display: block;
+  margin: auto;
+}
+main section article p a{
+  color: #00ADB5;
+
+}
+main section article p a :visited{
+  color: #00ADB5;
+
+}
+
+/*FOOTER*/
+
+footer{
+  margin-top: 5%;
+  background-color: #393E46;
+}
+footer ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+footer ul li{
+  padding: 1%;
+  color: #EEEEEE;
+}

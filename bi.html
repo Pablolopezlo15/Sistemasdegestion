@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Intelligent</title>
+    <link rel="stylesheet" href="css/sistemasdegestion.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="menu-check">
+        <label id="menu" for="menu-check">
+            <span id="menu-abrir">&#9776;</span>
+            <span id="menu-cerrar">X</span>
+        </label>
+        <nav >
+            <ul>
+                <div>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#" id="actual">Sistemas de Gestión de Información</a>
+                        <ul>
+                            <li><a href="erp.html" target="">ERP</a></li>
+                            <li><a href="crm.html" >CRM</a></li>
+                            <li><a href="bi.html" id="actual">BI</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Sistemas de Redifusión</a>
+                        <ul>
+                            <li><a href="rss.html">RSS</a></li>
+                            <li><a href="atom.html">ATOM</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <img src="./img/Business-Intelligence-Platforms.png" alt="">
+
+            <article>
+                <h1>Business Intelligent (BI)</h1><br>
+                <h2>¿Qué son los BI?</h2><br>
+                <p>
+                    Business Intelligence (BI) es un conjunto de herramientas, tecnologías y procesos que permiten a las empresas analizar y transformar datos en información significativa y útil para la toma de decisiones empresariales. Business Intelligence se enfoca en la creación de informes, cuadros de mando, análisis de datos y minería de datos para proporcionar información procesable para los tomadores de decisiones en una organización.
+                </p>
+                <h4>Tienen como objetivo</h4>
+                <p>
+                    Ayudar a las organizaciones a tomar decisiones informadas y estratégicas al proporcionar una visión completa y precisa de los datos empresariales. Al utilizar diversas técnicas y herramientas, el business intelligence recopila, analiza y presenta información relevante sobre el rendimiento de la empresa, los procesos internos, las tendencias del mercado y otros factores clave.
+                </p>
+                <img src="img/Modelo-de-Datos-Power-BI.png" alt="">
+            </article>
+            <article>
+                <h2>ETL</h2>
+                <h4>¿Qué es?</h4>
+                <p>ETL es un acrónimo que significa Extract, Transform, Load (Extracción, Transformación, Carga, en español). Es un proceso utilizado en el ámbito de la inteligencia empresarial (business intelligence) y la gestión de datos para integrar y consolidar datos de diferentes fuentes en un único repositorio o almacén de datos.</p>
+                <h4>El proceso ETL se divide en tres etapas:</h4>
+                <ol>
+                    <li> <span>Extracción (Extract):</span> En esta etapa, los datos se extraen de múltiples fuentes de origen, como bases de datos, archivos planos, sistemas de gestión de contenido, servicios web, entre otros. Los datos extraídos pueden ser estructurados (por ejemplo, tablas de bases de datos) o no estructurados (por ejemplo, archivos de texto). El objetivo es obtener los datos necesarios para el análisis y la toma de decisiones.</li>
+                    <li> <span>Transformación (Transform):</span> Una vez que los datos se han extraído, se aplican una serie de transformaciones para limpiar, reorganizar, combinar y dar formato a los datos de acuerdo con los requisitos del almacén de datos o del modelo de datos utilizado. Las transformaciones pueden incluir filtrado, eliminación de duplicados, conversión de formatos, cálculos, normalización, agregación y más. El objetivo es garantizar la calidad y consistencia de los datos, así como prepararlos para el análisis posterior.</li>
+                    <li> <span>Carga (Load):</span> En esta etapa final, los datos transformados se cargan en el almacén de datos o en la base de datos objetivo. Esto implica estructurar los datos en tablas y columnas, establecer relaciones entre las tablas y asegurarse de que los datos estén disponibles para su posterior consulta y análisis. La carga puede realizarse de forma incremental, agregando solo los datos nuevos o actualizados, o de manera completa, reemplazando todos los datos existentes.</li>
+                </ol>
+            </article>
+            <article>
+                <h2>Data Warehouse</h2><br><br>
+                <h4>¿Qué es?</h4>
+                    <p>Un Data Warehouse (almacén de datos) es un repositorio centralizado que integra y almacena datos de diversas fuentes dentro de una organización. Su objetivo principal es proporcionar una visión global y coherente de los datos para respaldar el análisis y la toma de decisiones empresariales.</p>
+                <h4>Un Data Warehouse se caracteriza por</h4>   
+                  <ul>
+                    <li><span>Integración de datos:</span> Combina datos de múltiples fuentes, como sistemas transaccionales, bases de datos operacionales, archivos planos y más. Los datos se extraen, transforman y cargan en el Data Warehouse utilizando el proceso ETL para garantizar la consistencia y calidad de los datos.</li>
+                    <li><span>Estructura optimizada para el análisis:</span>Los datos en un Data Warehouse se organizan y modelan de manera que sean adecuados para el análisis empresarial. Se utilizan modelos de datos como el modelo dimensional (por ejemplo, esquemas de estrella o copo de nieve) para facilitar la consulta y el análisis de los datos.</li>
+                    <li><span>Orientado a sujetos:</span>El Data Warehouse se centra en temas o áreas de interés específicas de la organización, como ventas, clientes, inventario, marketing, finanzas, etc. Los datos se organizan en torno a estos temas para facilitar la comprensión y el análisis de la información relacionada.</li>
+                    <li><span>Histórico y no volátil:</span>El Data Warehouse almacena datos históricos en lugar de datos transaccionales en tiempo real. Esto permite el análisis de tendencias a lo largo del tiempo y el seguimiento del rendimiento empresarial a largo plazo. Además, los datos en un Data Warehouse son no volátiles, lo que significa que los datos no se modifican una vez cargados, garantizando la consistencia de la información histórica.</li>
+                    <li><span>Accesible para el análisis:</span> Los usuarios pueden acceder a los datos almacenados en el Data Warehouse utilizando herramientas de consulta y generación de informes, como aplicaciones de inteligencia empresarial (BI) y herramientas de visualización de datos. Estas herramientas permiten a los usuarios realizar consultas complejas, generar informes personalizados y realizar análisis multidimensionales para obtener información valiosa.</li>
+                </ul>
+            
+            </article>
+            <article>
+                <h4>OLAP y Data Mining</h4>
+                <p>OLAP (Online Analytical Processing) y Data Mining son dos conceptos relacionados con la inteligencia empresarial (business intelligence) que se utilizan para el análisis de datos y la obtención de información significativa.</p>
+                
+                <ul>
+                    <li><span>OLAP (Procesamiento Analítico en Línea):</span> se refiere a un enfoque de análisis de datos que permite a los usuarios realizar consultas y análisis multidimensionales sobre grandes volúmenes de datos almacenados en un Data Warehouse u otros sistemas de almacenamiento de datos. Con OLAP, los usuarios pueden explorar los datos desde diferentes perspectivas, realizar desgloses, resúmenes, comparaciones y análisis de tendencias. Los datos se presentan de manera interactiva en forma de cubos OLAP, donde se pueden realizar operaciones como la perforación (drill-down) y la consolidación (roll-up) para navegar y analizar los datos.</li>
+                    <li><span>Data Mining (Minería de Datos):</span> se refiere al proceso de descubrir patrones, relaciones y conocimientos ocultos en grandes conjuntos de datos. Utiliza técnicas y algoritmos avanzados para analizar los datos y extraer información valiosa que puede ser utilizada para la toma de decisiones y la obtención de ventajas competitivas. Algunas técnicas comunes utilizadas en Data Mining incluyen la clasificación, la regresión, el agrupamiento, la asociación y la detección de anomalías. El Data Mining se utiliza para descubrir tendencias, predecir comportamientos, segmentar clientes, realizar análisis de mercado y más.</li>
+                </ul>
+                
+                
+                <h4>Los Business Intelligence más populares son:</h4>
+                <ol>
+                    <li>
+                        <a href="https://www.tableau.com/es-es/trial/tableau-software?utm_campaign_id=2017049&utm_campaign=Prospecting-CORE-ALL-ALL-ALL-ALL&utm_medium=Paid+Search&utm_source=Google+Search&utm_language=ES&&utm_country=SoEUR-ES&kw=tableau&adgroup=CTX-Brand-Core-ES-E&adused=600221655572&matchtype=e&placement=&d=7013y000000vYhH&nc=7013y0000029zDnAAI&cq_cmp=11234415240&cq_net=g&cq_plac=&gad=1&gclid=CjwKCAjwgqejBhBAEiwAuWHioFVC2irhGQWWUZPjlXQsxXnbA8p1wWSWPZHrW_6Siwt0NjTSN-wqqBoC3FgQAvD_BwE&gclsrc=aw.ds" target="_blank">Tableau</a>
+                    </li>
+                    <li>
+                        <a href="https://powerbi.imaginaformacion.com/?utm_source=google&utm_medium=cpc&utm_campaign=9317434728&utm_content=c&utm_term=power%20business%20intelligence&matchtype=e&gclid=CjwKCAjwgqejBhBAEiwAuWHioFiUJ9AqPPzxzJr7L_ykPpSOEscYT2iAdqcN9UsELBvzIWcSRXe2UxoCfeAQAvD_BwE" target="_blank">Microsoft Power BI</a>
+                    </li>
+                    <li>
+                        <a href="https://www.qlik.com/es-es/lp/ppc/qlik-sense-business/qv?utm_team=DIG&utm_subtype=cpc_brand&ppc_id=7CbmWmoP&kw=qlikview&utm_content=7CbmWmoP_pcrid_398174895358_pmt_e_pkw_qlikview_pdv_c_mslid__pgrid_82323341213_ptaid_kwd-1400175604&utm_source=google&utm_medium=cpc&utm_campaign=Qlik_Spain_Google_Brand_DA_Brand_ES&utm_term=qlikview&{lpurl}&_bt=398174895358&_bk=qlikview&_bm=e&_bn=g&_bg=82323341213&gad=1&gclid=CjwKCAjwgqejBhBAEiwAuWHioBsKozkRLOyjjPtaHJjxQ-xgzIns9RynNOgWS10iBrFj-J14Kj7_bhoCAj4QAvD_BwE" target="_blank">
+                            QlikView</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ibm.com/es-es/products/cognos-analytics?utm_content=SRCWW&p1=Search&p4=43700068108609533&p5=e&gclid=CjwKCAjwgqejBhBAEiwAuWHioCdtiiUXm_PUjI_dtWeNp1X3-bsRdZt_4xA5HKbRGBo1eujGPRrCYRoCIS0QAvD_BwE&gclsrc=aw.ds" target="_blank">
+                            IBM Cognos</a>
+                    </li>
+                </ol>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>Pablo López y Ángel Granados</li>
+            <li>Todos los derechos reservados &#169;</li>
+        </ul>
+    </footer>
